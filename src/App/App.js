@@ -11,6 +11,7 @@ const { FullscreenProvider, ToastProvider, TooltipProvider, ShortcutsProvider, D
 const ServicesToaster = require('./ServicesToaster');
 const SearchParamsHandler = require('./SearchParamsHandler');
 const DeepLinkHandler = require('./DeepLinkHandler');
+const InstallKeyHandler = require('./InstallKeyHandler');
 const { default: ShellOpenHandler } = require('./ShellOpenHandler');
 const { default: UpdaterBanner } = require('./UpdaterBanner');
 const { default: ShortcutsModal } = require('./ShortcutsModal');
@@ -172,6 +173,7 @@ const App = () => {
                                     <ServicesToaster />
                                     <SearchParamsHandler />
                                     <DeepLinkHandler />
+                                    <InstallKeyHandler />
                                     <ShellOpenHandler />
                                     <UpdaterBanner className={styles['updater-banner-container']} />
                                     <ProtectedRoutes />
